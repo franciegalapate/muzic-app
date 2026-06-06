@@ -1,6 +1,6 @@
 package com.muzic.backend.service;
 
-import com.anthropic.client.Anthropic;
+import com.anthropic.client.AnthropicClient;
 import com.anthropic.client.okhttp.AnthropicOkHttpClient;
 import com.anthropic.models.messages.Message;
 import com.anthropic.models.messages.MessageCreateParams;
@@ -19,7 +19,7 @@ public class AnthropicService {
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     public JsonNode analyzeMood(String journalContent) {
-        Anthropic client = AnthropicOkHttpClient.builder()
+        AnthropicClient client = AnthropicOkHttpClient.builder()
                 .apiKey(apiKey)
                 .build();
 

@@ -70,6 +70,11 @@
 			<artifactId>spotify-web-api-java</artifactId>
 			<version>8.3.6</version>
 		</dependency>
+		<dependency>
+			<groupId>com.anthropic</groupId>
+			<artifactId>anthropic-java-core</artifactId>
+			<version>1.4.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
