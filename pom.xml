@@ -71,9 +71,9 @@
 			<version>8.3.6</version>
 		</dependency>
 		<dependency>
-			<groupId>com.anthropic</groupId>
-			<artifactId>anthropic-java-core</artifactId>
-			<version>1.4.0</version>
+			<groupId>com.google.genai</groupId>
+			<artifactId>google-genai</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 

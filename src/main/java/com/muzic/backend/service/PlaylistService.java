@@ -17,7 +17,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PlaylistService {
 
-    private final AnthropicService anthropicService;
+    private final AIService AIService;
     private final SpotifyService spotifyService;
     private final JournalEntryRepository journalEntryRepository;
     private final PlaylistRepository playlistRepository;
@@ -25,7 +25,7 @@ public class PlaylistService {
     public PlaylistResponse generatePlaylist(String journalContent) {
 
         // Step 1: Analyze mood with Claude
-        JsonNode moodAnalysis = anthropicService.analyzeMood(journalContent);
+        JsonNode moodAnalysis = AIService.analyzeMood(journalContent);
 
         // Step 2: Save journal entry
         JournalEntry journalEntry = new JournalEntry();

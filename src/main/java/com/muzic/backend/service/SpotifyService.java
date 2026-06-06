@@ -46,12 +46,13 @@ public class SpotifyService {
             for (String keyword : keywords) {
                 if (tracks.size() >= limit) break;
 
-                String query = keyword + " genre:" + String.join(" ", genres);
+                String query = keyword + " " + genres.get(0);
                 SearchTracksRequest searchRequest = spotifyApi.searchTracks(query)
                         .limit(Math.min(5, limit - tracks.size()))
                         .build();
 
                 Track[] results = searchRequest.execute().getItems();
+                System.out.println("Spotify query: " + query + " | results: " + results.length);
 
                 for (Track track : results) {
                     if (tracks.size() >= limit) break;
