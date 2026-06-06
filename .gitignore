@@ -45,3 +45,5 @@ backend/src/main/resources/application.properties
 # Mobile
 mobile/node_modules/
 mobile/.expo/
+
+.env
