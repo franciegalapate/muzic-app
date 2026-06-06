@@ -6,7 +6,7 @@ Muzic is an AI-powered mood-based playlist generator. You write a short journal 
 
 ---
 
-## ✨ Features
+## Features
 
 - 📝 **Daily journal entry** — describe how you're feeling in your own words
 - 🤖 **AI mood analysis** — powered by OpenRouter (Llama / GPT) to extract mood, energy level, and themes
@@ -16,7 +16,7 @@ Muzic is an AI-powered mood-based playlist generator. You write a short journal 
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Backend
 
@@ -41,7 +41,7 @@ Muzic is an AI-powered mood-based playlist generator. You write a short journal 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 muzic/
@@ -73,8 +73,6 @@ muzic/
 ```
 
 ---
-
-## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -127,7 +125,7 @@ spotify.client.id=your_spotify_client_id
 spotify.client.secret=your_spotify_client_secret
 ```
 
-> ⚠️ Both files are gitignored and will never be committed.
+> Both files are gitignored and will never be committed.
 
 ---
 
@@ -187,7 +185,7 @@ Then open:
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Francie Galapate**
 BS Computer Science — Saint Louis University, Baguio City
